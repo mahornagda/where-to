@@ -18,7 +18,7 @@ header p{margin:6px 0 0;color:var(--mute)}
 select,input[type=range]{font:500 13px 'Inter Tight'}select{border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--card)}
 .tabs{margin-left:auto;display:flex;gap:6px}
 main{padding:24px 40px 60px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr));gap:22px}
 .card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);cursor:pointer;transition:.2s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(60,40,20,.12)}
 .hero{height:200px;background:#ddd center/cover;position:relative}
@@ -57,7 +57,7 @@ textarea{width:100%;min-height:80px;border:1px solid var(--line);border-radius:1
 .note{color:var(--mute);font-size:12.5px;margin:14px 0 0}
 .ideas{max-width:760px}.ideas li{padding:6px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between}
 .ideas button{border:0;background:none;color:var(--mute);cursor:pointer}
-@media(max-width:700px){header,main,.bar{padding-left:16px;padding-right:16px}.row{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.cal{flex-wrap:wrap}.day{width:62px}}
+@media(max-width:700px){header h1{font-size:32px}.tip{margin:0 16px}.bar{gap:6px}.tabs{margin-left:0}.dh{height:240px}.dc{padding:6px 16px 40px}.dc h2{font-size:26px}.thumbs{padding:10px 16px}body{overflow-x:hidden}.hero .fit{font-size:12px}header,main,.bar{padding-left:16px;padding-right:16px}.row{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.cal{flex-wrap:wrap}.day{width:62px}}
 </style></head><body>
 <header>
  <div><h1>Where to, <em id="hn">us?</em></h1><p><span id="hw">Us</span> · one trip, 6 days away, only 3 leaves · from Delhi · <b style="color:var(--acc)">budget ₹1L for both of us, all-in</b></p></div>
